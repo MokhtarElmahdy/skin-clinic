@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 function Contact() {
-  const handleForm = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleForm = (e) => {
     e.preventDefault()
     // console.log(e.name);
     // console.log(fName,lName,email,password,cPassword,status,age);
