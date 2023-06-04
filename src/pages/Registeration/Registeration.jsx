@@ -4,6 +4,7 @@ import LogIn from '../../components/Registeration/LogIn'
 import SignUp from '../../components/Registeration/SignUp'
 import styles from './Registeration.module.css'
 import { useState } from 'react'
+import FormComp from '../../components/Registeration/FormComp'
 function Registeration() {
     const [choose , setChoose] = useState('login');
     const handleChoose = (vl)=>{
@@ -13,13 +14,9 @@ function Registeration() {
     <Container>
         <div className={styles.registeration}>
             <div className={styles.form}>
-                <Tab ch={handleChoose}/>
-                {(choose == 'login') && <LogIn/> }
-                {(choose == 'signup') && <SignUp/> }
+                <FormComp/>
             </div>
         </div>
-        
-        
     </Container>
   )
 }

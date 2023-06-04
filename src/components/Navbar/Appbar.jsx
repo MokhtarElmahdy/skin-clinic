@@ -4,9 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import {routes} from '../Layout/router'
 import {Link} from 'react-router-dom';
 import { Button } from 'react-bootstrap';
-import type {FC} from "react"
 
-const Appbar: FC = (): JSX.Element => (
+const Appbar= () => (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
         <Link to="/" className='navbar-brand'>

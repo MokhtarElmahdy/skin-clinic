@@ -1,7 +1,6 @@
-import type {FC} from "react"
 import {routes} from '../Layout/router';
 import {Link} from 'react-router-dom'
-const Footer: FC = (): JSX.Element => (
+const Footer= ()=> (
 <footer className="page-footer font-small blue pt-4 bg-dark text-light">
     <div className="container-fluid text-center text-md-left">
         <div className="row">
